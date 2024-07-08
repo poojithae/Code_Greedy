@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{%extends 'books/base.html' %}
+ {% block body_block %}
+ <br><h1 class="bookheading">Books Insert:<br></h1>
+ <p class="text-50 mb-5">Please enter book details:</p>
+ <br>
+ <div class="update" style="text-align: center; padding: 80px;">
+
+ <form method="post">
+   <div class="form"></div>
+    {{form.as_p}}<br>
+    
+    {%csrf_token%}<br><br>
+    <button type="button" class="btn">Submit</button>
+   </div>
+ </form>
+
+</div>
+ {% endblock %}
+
+
+
+ <!-- <!DOCTYPE html>
+ {% load static %}
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/books.css"%}">
+ </head>
+ <body>
+
+<nav>
+    <div class="heading">
+       <h1><strong>Harvi</strong> Management</h1>
+    </div>
+    <div class="sd">
+        <ul class="navvvv">
+           <li class="nav">Home</li>
+           <li class="nav">About Us</li>
+           <li class="nav">Services</li>
+        </ul>
+    </div>
+   </nav>
+   <h1 class="bookheading">Books insert</h1>
+    <form method="POST">
+    {{form.as_p}}
+    {%csrf_token%}
+    <input type="submit" value="submit">
+ </form>
+    
+ </body>
+ </html> -->

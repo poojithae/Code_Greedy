@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/books.css"%}">
+    <title>Code Greedy</title>
+    
+</head>
+<body>
+   <nav>
+    <div class="heading" >
+        <a class="k" style="text-decoration: none; color: #71c6dd;"  href="/books"> <h1><strong>Code</strong> Greedy:)</h1></a>
+    </div>
+    <div class="sd">
+        <ul class="navvvv">
+            <a class="k" style="text-decoration: none;"  href="/books"> <li class="nav"> Home</li></a>
+           <a class="k"  style="text-decoration: none;" href="/aboutus"><li class="nav">About Us</li></a>
+          <a class="k"  style="text-decoration: none;" href="/services"> <li class="nav">Services</li></a>
+        </ul>
+    </div>
+   </nav>
+   <div class="maincontainer">
+    <div class="bookheadingdiv">
+        
+        <h1 class="bookheading">Books Information</h1>
+  
+    </div>
+</div>
+
+   {% block body_block %}
+   {% endblock %}
+</body>
+</html>

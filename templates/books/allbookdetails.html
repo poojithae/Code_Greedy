@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{%extends 'books/base.html' %}
+ {% block body_block %}
+
+   
+
+
+
+ <div class="details">
+    <div class="bookdetails">
+    <div class="allbooks">
+        <table class="column">
+         <thead class="columngrid">
+          
+           <th class="title">Book Title</th><br>
+           <th class="author">Book Author</th>
+         </thead>
+         {% for book in Books %}
+         <tr class="border">
+           
+            <td class="information">{{book.title}}</td>
+            <td class="information">{{book.author}}</td>
+           <td><button class="viewdetails""><a  class="link" href="/singledetails/{{book.id}}" >View Details</a></button></td>
+           <td><button class="viewdetails""><a  class="link" href="/delete/{{book.id}}" >Delete</a></button></td>
+           
+         </tr>
+       
+         {% endfor %}
+        </table><br><br>
+        
+       
+    </div>
+    </div>
+
+    
+    </div><br><br><br>
+    <div class="insert">
+        <button class="record"><a class="new" href= "/created/">Insert New Books </a></button>
+        </div>
+ {% endblock %}
+

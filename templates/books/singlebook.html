@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'books/base.html' %}
+{% block body_block %}
+<div class="all" style="background-color: rgb(143, 131, 236); height: 100%; width: 100%;">
+<div class="aaa" style="margin-top: 100px; background-color: antiquewhite;">
+<div class="details">
+    <div class="bookdetails">
+    <div class="allbooks">
+        <table class="column">
+         <thead class="columngrid">
+          
+           <th class="title">Book Title</th>
+           <th class="author">Book Author</th>
+           <th class="author">Book Publication_Date</th>
+           <th class="author">Book Isbn</th>
+         </thead>
+         <tr class="border">
+            <td class="information ddd"  style="text-align: center;">{{d.title}}</td><br>
+            <td class="information ddd"  style="text-align: center;">{{d.author}}</td><br>
+            <td class="information ddd"  style="text-align: center;">{{d.publication_date}}</td><br>
+            <td class="information ddd"  style="text-align: center;">{{d.isbn}}</td><br>
+         </tr>
+        </table>
+        
+    </div>
+    </div><br>
+    <button style="width: 100px; margin: auto;" class="record"><a class="new" href= "/update/{{d.id}}">UPDATE</a></button>
+</div>
+</div>
+<!-- <div class="update" style="text-align: center; padding: 80px;">
+<h1>TITLE:{{d.title}}</h1>
+<h1>AUTHOR:{{d.author}}</h1>
+<h1>PUBLICATION_DATE:{{d.publication_date}}</h1>
+<h1>ISBN:{{d.isbn}}</h1>
+<button class="record"><a class="new" href= "/update/{{d.id}}">UPDATE </a></button>
+</div> -->
+{% endblock %}
+
