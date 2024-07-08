@@ -123,9 +123,9 @@ nav{
 }
 .record{
     margin-bottom: 100px;
-    padding: 18px;
     background-color: rgb(26, 26, 31);
     border-radius: 10px;
+    padding: 18px;
 }
 .dorm{
     display: flex;
@@ -157,16 +157,15 @@ nav{
     text-align: center;
       
 }
-.btn{
-    border-radius: 10px;
-    background-color: #71c6dd;
-    width: 80px;
-    height: 50px;
-}
+
 .new1{
     font-size: 18px;
-    color: black;
+    
     text-decoration: none;
+    background-color: rgb(26, 26, 31);
+    padding: 6px;
+    border-radius: 6px;
+    color: white;
 }
 .record:hover{
     cursor: pointer;
@@ -198,3 +197,4 @@ input{
     margin: 20px;
     
 }
+
